@@ -17,8 +17,9 @@ The site is being developed as a home for selected projects, practical experimen
 
 - `index.html` — homepage.
 - `404.html` — not-found page.
-- `migration/` — content migration notes and media review.
 - `SECURITY.md` — guidance for handling this public repository.
+
+Internal migration inventories and work notes are intentionally kept out of the current public file tree.
 
 ## Development notes
 
@@ -26,5 +27,4 @@ This is an evolving project. Features and case studies will be described as they
 
 ## Security
 
-This repository is public. Never commit API keys, passwords, private keys, database exports, full site backups, or other confidential material. See [SECURITY.md](SECURITY.md) for details.
-
+This repository is public. Never commit API keys, passwords, private keys, database exports, full site backups, customer information, or confidential working notes. See [SECURITY.md](SECURITY.md) for details.
