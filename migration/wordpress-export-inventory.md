@@ -10,7 +10,7 @@ Source: WordPress export `007saas.WordPress.2026-10-12.xml` (768 KB). This is a 
 |---|---|---|
 | Custom root landing page, slug `1439-2` | **Keep as a design reference** | Useful dark/navy + neon-green visual direction and project-hub concept. The new static `index.html` is already a cleaner draft; compare and selectively reuse ideas rather than blindly copying WordPress markup. |
 | Page slug `1470-2`, title/positioning around “007SaaS / 自动化营销与海外线索捕获” | **Keep for positioning review** | Potentially useful positioning around SaaS marketing, overseas growth, and AI analytics. Any strong feature/performance claims must be verified against real, working products before public use. |
-| Page slug `1450-2` | **Review later** | Custom HTML page appears in the export; the export inventory alone does not establish that its content is worth publishing. Inspect the full page before deciding. |
+| Custom HTML page slug `1450-2` | **Keep as the strongest layout reference** | The export contains a full custom landing-page structure: dark background + green accents, a top navigation for AI Agent / solutions / about, a hero describing an automated business hub, a bento-style feature grid, and a structured footer. Reuse the visual/layout patterns selectively; rewrite product claims and do not present proposed features as live capabilities. |
 | Page titled `首页`, slug `首页`, title “语音唤醒：夏娃形态” | **Keep separate as an experiment** | Voice-wake/Eve concept is an independent prototype, not the official 007SaaS homepage. Do not surface it as a live feature unless the demo is tested and intentionally revived. |
 | `Writing a Business Case: What It Is and How to Write` | **Do not migrate body; save topic idea** | Body contains Lorem ipsum/template text and generic social-media tips unrelated to the title. Could be rewritten later only if there is a useful original case. |
 | `Tools and Tips to Successfully Organize Your Small Business` | **Do not migrate body; save topic idea** | Article appears to use starter-template content. Rewrite only if there is a specific, useful angle. |
@@ -43,8 +43,9 @@ These are **ideas, not approved articles**. Prefer writing from actual work and 
 - [x] Initial static homepage draft exists at `index.html`.
 - [x] Initial 404 page exists.
 - [x] This selective content inventory has been recorded.
-- [ ] Inspect the complete custom HTML for `1450-2` and decide whether any component is worth reusing.
-- [ ] Review the complete `1470-2` page and strip any unsupported product claims before reuse.
+- [x] Review the exported structure of `1450-2`: retain its dark/green visual language, bento layout, navigation hierarchy, and footer as reusable design references.
+- [ ] If the local WordPress backup is available, inspect the full `1450-2` HTML and compare its individual feature cards against real working projects before reusing copy.
+- [ ] Review the complete `1470-2` page and strip any unsupported product claims before reuse; treat it as a separate landing-page variant, not the same page as `1450-2`.
 - [ ] Extract only selected, verified media from the local WordPress backup; do not assume the XML contains media binaries.
 - [ ] Add static pages only for content that passes review.
 - [ ] Decide whether to retain legacy URL paths or create redirects for pages intentionally retired.
