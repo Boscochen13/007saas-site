@@ -52,7 +52,9 @@ The custom pages `1439-2`, `home`, `1450-2`, and `1470-2` are separate landing-p
 - [x] Performed a basic pattern scan of current tracked text/source files for common API-key formats, private-key headers, suspicious credential assignments, and email addresses; no matches were found in that limited scan.
 - [ ] Review Git history for previously committed secrets and sensitive material; the current-file scan does not cover the full history.
 - [ ] In GitHub account settings, confirm 2FA/passkey, recovery methods, active sessions, SSH keys, and authorized apps.
-- [ ] Review repository collaborators/write access and branch protection; account/security settings cannot be fully verified from the public repository view.
+- [ ] Review repository collaborators/write access and configure branch protection if desired. Current API readout reports `main` is **not protected**; this connection cannot enable protection.
 - [ ] Verify `007saas.com` at the GitHub account Pages settings before adding custom-domain DNS records.
+
+A follow-up pattern scan checked the current tracked text/source files and commit diffs for common private-key, API-token, credential-assignment, and database-URL patterns. No matches were found in the scanned material. This is a limited heuristic check, not a complete secret audit or proof that the full history is clean.
 
 The repository is public by design, so source code and all committed history must be treated as public. `.gitignore` is only a preventive guardrail; it does not remove already committed files or revoke leaked credentials.
