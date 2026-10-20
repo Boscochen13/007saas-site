@@ -1,0 +1,31 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+secrets.*
+credentials.*
+
+# WordPress backups and exports (never publish these)
+*.sql
+*.sql.gz
+*.wpress
+*.zip
+*.tar
+*.tar.gz
+wp-config.php
+wp-config-*.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+
+# Local/editor/system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
