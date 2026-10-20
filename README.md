@@ -6,8 +6,9 @@ Static website for the 007SaaS domain and project hub. The goal is to move the p
 
 - [x] Initial responsive static homepage added.
 - [x] First-pass content triage completed; see [`migration/wordpress-export-inventory.md`](migration/wordpress-export-inventory.md).
-- [ ] Finish reviewing custom landing-page copy and decide which components are safe to reuse.
-- [ ] Audit the WordPress export's media references and copy only selected, verified assets into this repository (do not rely on the old host).
+- [x] Review exported copy of the custom landing-page variants; retain layout ideas only and flag unsupported claims.
+- [x] Audit media references and identify likely theme/demo placeholders; see [`migration/wordpress-media-audit.md`](migration/wordpress-media-audit.md).
+- [ ] Visually inspect candidate media from the local WordPress ZIP before copying selected assets into this repository.
 - [ ] Rebuild any WordPress-only interactions as static HTML/CSS/JavaScript.
 - [ ] Decide how to handle legacy URLs: keep only useful routes or document retired routes; then test navigation, images, mobile layout, and HTTPS.
 - [ ] Configure GitHub Pages and test on its default URL.
@@ -38,6 +39,6 @@ Open `index.html` in a browser. For routing and path testing, use a local static
 
 The WordPress export contains several older article bodies with placeholder text and mismatched generic copy. These are not being imported verbatim. Their titles are recorded as optional future topics, not as ready-to-publish content.
 
-The custom pages `1450-2` and `1470-2` are separate landing-page variants. `1450-2` is the stronger visual/layout reference (dark palette, green accents, bento-style feature area, structured navigation/footer). `1470-2` contains more aggressive automated-growth claims; do not reuse those claims unless the corresponding capabilities can be demonstrated.
+The custom pages `1439-2`, `home`, `1450-2`, and `1470-2` are separate landing-page variants. They offer dark/neon visual references, but contain unsupported claims including automated conversion, 24/7 monitoring, live revenue/ROI feeds, $54,000 annual savings, and price-like figures. Do not present these as real capabilities or outcomes without evidence. See the content and media audit files.
 
 **Deployment status:** the repository is public and contains a static draft, but GitHub Pages publication and the custom domain have not been verified. No DNS change or hosting cancellation is part of this stage.
