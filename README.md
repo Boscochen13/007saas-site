@@ -5,10 +5,11 @@ Static website for the 007SaaS domain and project hub. The goal is to move the p
 ## Status
 
 - [x] Initial responsive static homepage added.
-- [ ] Import and review all WordPress pages and posts from the October 2026 export.
-- [ ] Copy referenced media files into this repository (do not rely on the old host).
+- [x] First-pass content triage completed; see [`migration/wordpress-export-inventory.md`](migration/wordpress-export-inventory.md).
+- [ ] Finish reviewing custom landing-page copy and decide which components are safe to reuse.
+- [ ] Audit the WordPress export's media references and copy only selected, verified assets into this repository (do not rely on the old host).
 - [ ] Rebuild any WordPress-only interactions as static HTML/CSS/JavaScript.
-- [ ] Test every legacy URL, images, navigation, mobile layout, and HTTPS.
+- [ ] Decide how to handle legacy URLs: keep only useful routes or document retired routes; then test navigation, images, mobile layout, and HTTPS.
 - [ ] Configure GitHub Pages and test on its default URL.
 - [ ] Attach `007saas.com` only after verification.
 - [ ] Verify `link.007saas.com` still works after the main-domain DNS change.
@@ -31,3 +32,12 @@ Static website for the 007SaaS domain and project hub. The goal is to move the p
 ## Local preview
 
 Open `index.html` in a browser. For routing and path testing, use a local static web server rather than opening individual files directly.
+
+
+## Current migration decision (2026-10-20)
+
+The WordPress export contains several older article bodies with placeholder text and mismatched generic copy. These are not being imported verbatim. Their titles are recorded as optional future topics, not as ready-to-publish content.
+
+The custom pages `1450-2` and `1470-2` are separate landing-page variants. `1450-2` is the stronger visual/layout reference (dark palette, green accents, bento-style feature area, structured navigation/footer). `1470-2` contains more aggressive automated-growth claims; do not reuse those claims unless the corresponding capabilities can be demonstrated.
+
+**Deployment status:** the repository is public and contains a static draft, but GitHub Pages publication and the custom domain have not been verified. No DNS change or hosting cancellation is part of this stage.
