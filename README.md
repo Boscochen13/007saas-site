@@ -11,7 +11,8 @@ Static website for the 007SaaS domain and project hub. The goal is to move the p
 - [ ] Visually inspect candidate media from the local WordPress ZIP before copying selected assets into this repository.
 - [ ] Rebuild any WordPress-only interactions as static HTML/CSS/JavaScript.
 - [ ] Decide how to handle legacy URLs: keep only useful routes or document retired routes; then test navigation, images, mobile layout, and HTTPS.
-- [ ] Configure GitHub Pages and test on its default URL.
+- [x] Add a GitHub Actions workflow for publishing the static site (`.github/workflows/pages.yml`).
+- [ ] Trigger the first deployment and verify the GitHub Pages default URL (no workflow run is visible yet).
 - [ ] Attach `007saas.com` only after verification.
 - [ ] Verify `link.007saas.com` still works after the main-domain DNS change.
 - [ ] Cancel GoDaddy web hosting only after the migration is complete.
@@ -41,4 +42,4 @@ The WordPress export contains several older article bodies with placeholder text
 
 The custom pages `1439-2`, `home`, `1450-2`, and `1470-2` are separate landing-page variants. They offer dark/neon visual references, but contain unsupported claims including automated conversion, 24/7 monitoring, live revenue/ROI feeds, $54,000 annual savings, and price-like figures. Do not present these as real capabilities or outcomes without evidence. See the content and media audit files.
 
-**Deployment status:** the repository is public and contains a static draft, but GitHub Pages publication and the custom domain have not been verified. No DNS change or hosting cancellation is part of this stage.
+**Deployment status:** the repository is public, the static draft and Pages deployment workflow are present, but no workflow run is visible yet and the GitHub Pages URL has not been verified. No DNS change or hosting cancellation is part of this stage.
