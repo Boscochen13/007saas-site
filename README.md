@@ -44,3 +44,15 @@ The WordPress export contains several older article bodies with placeholder text
 The custom pages `1439-2`, `home`, `1450-2`, and `1470-2` are separate landing-page variants. They offer dark/neon visual references, but contain unsupported claims including automated conversion, 24/7 monitoring, live revenue/ROI feeds, $54,000 annual savings, and price-like figures. Do not present these as real capabilities or outcomes without evidence. See the content and media audit files.
 
 **Deployment status (2026-10-20):** GitHub Pages was enabled manually in repository settings. The latest GitHub Actions run completed successfully, including `Deploy to GitHub Pages`, and the user confirmed that the preview URL opens. The static draft intentionally differs from the former WordPress homepage. Continue visual/content QA before setting the custom domain or cancelling the old hosting plan. No DNS change has been made; keep local WordPress backups until cutover is verified.
+
+## Security review (2026-10-20)
+
+- [x] Added `.gitignore` rules for common credential files and WordPress backups.
+- [x] Added [SECURITY.md](SECURITY.md) with public-repository handling and incident-response guidance.
+- [x] Performed a basic pattern scan of current tracked text/source files for common API-key formats, private-key headers, suspicious credential assignments, and email addresses; no matches were found in that limited scan.
+- [ ] Review Git history for previously committed secrets and sensitive material; the current-file scan does not cover the full history.
+- [ ] In GitHub account settings, confirm 2FA/passkey, recovery methods, active sessions, SSH keys, and authorized apps.
+- [ ] Review repository collaborators/write access and branch protection; account/security settings cannot be fully verified from the public repository view.
+- [ ] Verify `007saas.com` at the GitHub account Pages settings before adding custom-domain DNS records.
+
+The repository is public by design, so source code and all committed history must be treated as public. `.gitignore` is only a preventive guardrail; it does not remove already committed files or revoke leaked credentials.
