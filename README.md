@@ -12,8 +12,8 @@ Static website for the 007SaaS domain and project hub. The goal is to move the p
 - [ ] Rebuild any WordPress-only interactions as static HTML/CSS/JavaScript.
 - [ ] Decide how to handle legacy URLs: keep only useful routes or document retired routes; then test navigation, images, mobile layout, and HTTPS.
 - [x] Add a GitHub Actions workflow for publishing the static site (`.github/workflows/pages.yml`).
-- [ ] In repository Settings → Pages, enable GitHub Pages and choose GitHub Actions as the build source. The workflow cannot enable Pages automatically because the connected GitHub integration lacks permission to create the Pages site.
-- [ ] After enabling Pages, verify the first successful deployment and default URL.
+- [x] GitHub Pages enabled; GitHub Actions selected as the publishing source.
+- [x] GitHub Actions deployment completed successfully; default preview URL: https://boscochen13.github.io/007saas-site/ (user confirmed the page opens; visual/content review remains).
 - [ ] Attach `007saas.com` only after verification.
 - [ ] Verify `link.007saas.com` still works after the main-domain DNS change.
 - [ ] Cancel GoDaddy web hosting only after the migration is complete.
@@ -43,4 +43,4 @@ The WordPress export contains several older article bodies with placeholder text
 
 The custom pages `1439-2`, `home`, `1450-2`, and `1470-2` are separate landing-page variants. They offer dark/neon visual references, but contain unsupported claims including automated conversion, 24/7 monitoring, live revenue/ROI feeds, $54,000 annual savings, and price-like figures. Do not present these as real capabilities or outcomes without evidence. See the content and media audit files.
 
-**Deployment status (2026-10-20):** workflow runs are now visible. The deployment currently fails at `Configure Pages`: GitHub returns `Resource not accessible by integration` when the workflow tries to create the Pages site. The remaining manual step is to enable Pages in repository Settings → Pages and select GitHub Actions as the source. No DNS change or hosting cancellation is part of this stage.
+**Deployment status (2026-10-20):** GitHub Pages has been enabled manually in repository settings. The latest workflow run completed successfully, including the `Deploy to GitHub Pages` step. The user confirmed the preview page opens. The preview is a new static draft and differs from the former WordPress homepage by design; finish visual/content QA before setting the custom domain or cancelling hosting.al step is to enable Pages in repository Settings → Pages and select GitHub Actions as the source. No DNS change or hosting cancellation is part of this stage.
