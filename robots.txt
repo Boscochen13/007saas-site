@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://007saas.com/sitemap.xml
