@@ -4,7 +4,7 @@ A lightweight static website and personal project hub for experiments in AI, aut
 
 ## Project
 
-The site is being developed as a home for selected projects, practical experiments, and case studies. Content is added selectively; legacy articles and landing-page concepts are reviewed before publication so that placeholder text and unsupported product claims are not presented as facts.
+The site is a home for selected projects, practical experiments, and professional experience in overseas growth, app publishing, analytics, and AI workflows. Experiments are labeled according to their stage; ideas under validation are not presented as finished products or proven outcomes.
 
 ## Tech and deployment
 
@@ -12,6 +12,7 @@ The site is being developed as a home for selected projects, practical experimen
 - Hosting target: GitHub Pages.
 - DNS: Cloudflare.
 - The Telegram shortlink service on `link.007saas.com` is a separate service and is not part of this repository.
+- Contact: `hello@007saas.com` (incoming email is currently routed through Cloudflare Email Routing).
 
 ## Repository structure
 
