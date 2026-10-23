@@ -1,7 +1,20 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="在投入开发前如何验证真实需求：007SaaS 关于小样本测试、质量指标、付费意愿与停止条件的实践方法。"><link rel="canonical" href="https://007saas.com/notes/validate-before-build/"><meta name="theme-color" content="#080d12"><title>先验证，再开发：低成本实验的四个问题 — 007SaaS</title><style>
+<html lang="zh-CN"><head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KH8FSZKL');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="在投入开发前如何验证真实需求：007SaaS 关于小样本测试、质量指标、付费意愿与停止条件的实践方法。"><link rel="canonical" href="https://007saas.com/notes/validate-before-build/"><meta name="theme-color" content="#080d12"><title>先验证，再开发：低成本实验的四个问题 — 007SaaS</title><style>
 :root{color-scheme:dark;--bg:#080d12;--line:#263743;--text:#edf5f3;--muted:#9aadaa;--green:#00df81;--max:800px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.85 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{width:min(calc(100% - 36px),var(--max));margin:auto}a{color:inherit;text-decoration:none}a:hover{color:var(--green)}header{padding:24px 0;border-bottom:1px solid var(--line)}.brand{font-weight:850}.brand b{display:inline-grid;place-items:center;background:var(--green);color:#04110b;border-radius:8px;width:32px;height:32px;margin-right:8px}main{padding:54px 0 80px}.eyebrow{color:var(--green);font-size:.82rem;font-weight:750;letter-spacing:.1em;text-transform:uppercase}h1{font-size:clamp(2.2rem,6vw,3.5rem);line-height:1.15;letter-spacing:-.06em;margin:16px 0}h2{font-size:1.35rem;letter-spacing:-.03em;margin:34px 0 8px}p,li{color:var(--muted)}.lead{font-size:1.15rem}.rule{padding:18px 20px;border:1px solid var(--line);border-radius:12px;margin:14px 0;background:#101922}.rule strong{display:block;color:var(--text);margin-bottom:4px}.callout{border-left:3px solid var(--green);padding-left:16px}footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem}
-</style></head><body><header><div class="wrap"><a class="brand" href="/"><b>007</b>007SaaS</a></div></header><main class="wrap"><div class="eyebrow">Field notes · Product thinking</div><h1>先验证，再开发：低成本实验的四个问题</h1><p class="lead">技术上能做出来，不等于用户需要；用户说“有意思”，也不等于愿意持续使用或付费。小项目最稀缺的资源往往不是代码，而是时间、注意力和验证机会。</p>
+</style></head><body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH8FSZKL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header><div class="wrap"><a class="brand" href="/"><b>007</b>007SaaS</a></div></header><main class="wrap"><div class="eyebrow">Field notes · Product thinking</div><h1>先验证，再开发：低成本实验的四个问题</h1><p class="lead">技术上能做出来，不等于用户需要；用户说“有意思”，也不等于愿意持续使用或付费。小项目最稀缺的资源往往不是代码，而是时间、注意力和验证机会。</p>
 <p>因此，007SaaS 的实验优先从最小问题开始：谁有这个问题？现有替代方案哪里不够？我们怎样用最低成本判断这个差异是否重要？</p>
 <h2>一、问题是否真实且频繁？</h2><div class="rule"><strong>要找行为证据，不只听口头兴趣。</strong>用户是否已经在用表格、复制粘贴、付费工具或人工服务解决问题？如果问题发生得很少，即使方案不错，也可能很难形成稳定需求。</div>
 <h2>二、我们解决的是哪一个具体痛点？</h2><p>把宽泛目标拆成可验证的任务。例如，“用 AI 提升电商效率”太大；“把一张商品图变成一张颜色与印花足够准确的模特展示图”更容易测试，也更容易定义失败。</p>
