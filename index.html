@@ -11,7 +11,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="007SaaS is an independent lab for AI-powered growth systems, overseas acquisition, automation workflows and practical product experiments.">
-<meta name="theme-color" content="#080b12">
+<meta name="theme-color" content="#090b12">
 <link rel="canonical" href="https://007saas.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://007saas.com/">
@@ -52,14 +52,51 @@ section.content-section{padding:112px 0}.section-top{display:flex;justify-conten
 @media(max-width:920px){.hero{grid-template-columns:1fr;min-height:auto;padding:85px 0 60px}.hero-art{min-height:420px;max-width:620px;width:100%;margin:0 auto}.project-card{grid-column:span 6}.case-grid{grid-template-columns:1fr 1fr}.capability-grid{grid-template-columns:1fr 1fr}.capability:nth-child(2){border-right:0}.capability:nth-child(-n+2){border-bottom:1px solid var(--line)}.method{grid-template-columns:1fr;gap:30px}}
 @media(max-width:680px){.wrap{width:min(calc(100% - 32px),var(--max))}.site-header{height:70px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:69px;left:0;right:0;padding:18px;background:#101827;border:1px solid var(--line);border-radius:0 0 12px 12px;flex-direction:column;align-items:stretch;gap:17px}.nav-links.open{display:flex}.nav-cta{text-align:center}.hero{padding:66px 0 48px;gap:8px}h1{font-size:clamp(3rem,14vw,5rem)}.hero-copy{font-size:1rem}.hero-art{min-height:340px}.core{width:118px;height:118px;border-radius:28px}.core strong{font-size:2rem}.orbit{width:85%}.orbit-two{width:65%}.float-one{right:-2px;top:8%}.float-two{left:-2px;bottom:8%}.signal-inner{padding:20px 0;display:grid;grid-template-columns:1fr 1fr;gap:16px}.signal-item{font-size:.72rem}section.content-section{padding:76px 0}.section-top{align-items:flex-start;flex-direction:column;gap:15px}.project-card,.project-card.featured{grid-column:span 12;min-height:270px}.project-card.featured{min-height:310px}.case-grid{grid-template-columns:1fr}.capability-grid{grid-template-columns:1fr}.capability{border-right:0;border-bottom:1px solid var(--line);min-height:auto}.capability:nth-child(2){border-bottom:1px solid var(--line)}.capability:last-child{border-bottom:0}.capability h3{margin:17px 0 7px}.footer-inner{align-items:flex-start;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+:root{--bg:#090b12;--line:rgba(192,207,231,.13);--text:#f5f7fb;--muted:#a1aec2;--blue:#8caeff;--cyan:#73e5dc;--lime:#c9f477;--violet:#a99aff;--header-h:76px}
+html{scroll-padding-top:calc(var(--header-h) + 22px)}
+.wrap{width:min(calc(100% - 56px),1180px)}
+.site-header{height:var(--header-h);position:sticky;top:0;z-index:100;width:100%;padding-inline:max(28px,calc((100vw - 1180px)/2));background:rgba(9,11,18,.82);border-bottom:1px solid rgba(192,207,231,.1);backdrop-filter:blur(18px) saturate(150%);transition:background .25s,border-color .25s}
+.site-header.scrolled{background:rgba(9,11,18,.96);border-color:rgba(115,229,220,.18);box-shadow:0 12px 40px rgba(0,0,0,.2)}
+.brand{gap:11px}.brand-mark{width:39px;height:39px;display:grid;place-items:center;border:1px solid rgba(115,229,220,.34);border-radius:12px;background:linear-gradient(145deg,rgba(140,174,255,.19),rgba(115,229,220,.09));color:#f5f7fb}.brand-mark svg{width:30px;height:30px}
+.nav-links{gap:clamp(15px,2.2vw,29px);font-size:.83rem}.nav-links a:not(.nav-cta){position:relative;padding:10px 0}.nav-links a:not(.nav-cta):after{content:"";position:absolute;left:0;right:100%;bottom:3px;height:1px;background:var(--cyan);transition:right .3s}.nav-links a:not(.nav-cta):hover:after,.nav-links a.active:after{right:0}
+.nav-cta,.button{border-radius:999px;transition:transform .28s cubic-bezier(.22,.75,.25,1),border-color .28s,background .28s,box-shadow .28s}
+.hero{padding-top:90px;gap:24px}.gradient-text{background-image:linear-gradient(105deg,#f7f8fc 2%,#a9c2ff 42%,#78e7dc 76%,#d4f78d 100%)}
+.core{width:176px;height:176px;border-radius:38px;background:linear-gradient(145deg,rgba(39,53,82,.8),rgba(14,28,40,.8));box-shadow:0 0 100px rgba(83,133,219,.2),inset 0 0 38px rgba(115,229,220,.1),0 25px 65px rgba(0,0,0,.3);animation:core-float 7s ease-in-out infinite}.core strong{font-size:clamp(1.45rem,2.4vw,2.05rem);letter-spacing:-.075em;white-space:nowrap}.core span{font-size:.47rem;letter-spacing:.15em;white-space:nowrap}
+.project-card{border-radius:18px;background:linear-gradient(145deg,rgba(20,29,46,.94),rgba(12,17,28,.98));box-shadow:inset 0 1px rgba(255,255,255,.035)}.project-card:before{content:"";position:absolute;inset:0;opacity:0;background:radial-gradient(420px circle at var(--spot-x,50%) var(--spot-y,50%),rgba(115,229,220,.12),transparent 42%);transition:opacity .35s;pointer-events:none}.project-card:hover:before{opacity:1}.project-card:hover{transform:translateY(-8px) scale(1.008);border-color:rgba(115,229,220,.38);box-shadow:0 28px 70px rgba(0,0,0,.28)}
+.case-card{border-radius:16px;transition:transform .3s,border-color .3s}.case-card:hover{transform:translateY(-5px);border-color:rgba(169,154,255,.32)}
+.capability{transition:background .25s}.capability:hover{background:linear-gradient(145deg,rgba(140,174,255,.08),rgba(115,229,220,.035))}
+.contact-panel{border-radius:22px;box-shadow:0 30px 90px rgba(0,0,0,.2),inset 0 1px rgba(255,255,255,.06)}
+.site-footer{padding:0;border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.015),transparent)}
+.footer-main{display:grid;grid-template-columns:1.6fr .7fr 1fr;gap:55px;padding:56px 0 44px}.footer-brand p{max-width:340px;color:var(--muted);font-size:.86rem;margin:18px 0 0}.footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:12px;color:var(--muted);font-size:.84rem}.footer-column a:hover{color:var(--cyan);transform:translateX(3px)}.footer-label{font-size:.64rem;letter-spacing:.18em;color:var(--cyan);font-weight:800;margin-bottom:6px}.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding:18px 0 24px;border-top:1px solid var(--line);color:#8290a5;font-size:.73rem}
+@keyframes core-float{0%,100%{translate:0 0}50%{translate:0 -9px}}
+@media(max-width:920px){.site-header{padding-inline:24px}.footer-main{gap:30px}}
+@media(max-width:680px){
+:root{--header-h:66px}html{scroll-padding-top:84px}.wrap{width:calc(100% - 36px);max-width:560px}
+.site-header{height:var(--header-h);padding-inline:18px}
+.nav-links{display:none;position:fixed;top:var(--header-h);left:0;right:0;padding:16px 18px 22px;background:rgba(9,11,18,.97);border:0;border-bottom:1px solid rgba(115,229,220,.2);border-radius:0 0 18px 18px;backdrop-filter:blur(22px);flex-direction:column;align-items:stretch;gap:8px}
+.nav-links.open{display:flex}.nav-links a:not(.nav-cta){padding:12px 8px;border-bottom:1px solid rgba(192,207,231,.08)}
+.hero{padding:62px 0 44px;gap:0;min-height:0}h1{font-size:clamp(3.15rem,13.5vw,4.6rem)}.hero-copy{font-size:.97rem;line-height:1.75}.hero-art{min-height:310px;margin-top:14px}
+.core{width:130px;height:130px;border-radius:30px}.core strong{font-size:1.5rem}.core span{bottom:20px;font-size:.4rem}
+.signal-inner{padding:18px 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}.signal-item{font-size:.68rem;gap:8px}
+section.content-section{padding:76px 0}.section-top{gap:13px;margin-bottom:28px}.section-top h2{font-size:2.25rem}.section-intro{font-size:.88rem;line-height:1.7}
+.project-grid{grid-template-columns:1fr;gap:12px}.project-card,.project-card.featured{grid-column:1/-1;min-height:0;padding:22px;border-radius:16px}.project-card.featured{min-height:290px}.project-card:not(.featured){min-height:250px}
+.case-grid{grid-template-columns:1fr;gap:12px}.case-card{padding:22px}.capability-grid{grid-template-columns:1fr}.capability{padding:22px;min-height:0;border-right:0;border-bottom:1px solid var(--line)}.capability:last-child{border-bottom:0}
+.method{grid-template-columns:1fr;gap:24px}.step{grid-template-columns:38px 1fr;gap:12px;padding:18px 0}
+.contact-panel{padding:27px 23px;border-radius:18px}.contact-panel h2{font-size:2.35rem}.contact-actions{gap:14px;margin-top:22px}
+.footer-main{grid-template-columns:1fr 1fr;gap:30px 20px;padding:38px 0 30px}.footer-brand{grid-column:1/-1}.footer-bottom{flex-direction:column;gap:8px;padding:16px 0 22px}
+}
+@media(max-width:380px){.wrap{width:calc(100% - 28px)}.hero-art{min-height:285px}}
+@media(hover:none){.project-card:hover,.case-card:hover{transform:none}.project-card:before{display:none}}
+@media(prefers-reduced-motion:reduce){.core{animation:none!important}}
 </style>
 </head>
-<body>
+<body><div id="scrollProgress" aria-hidden="true" style="position:fixed;z-index:120;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,#8caeff,#73e5dc,#c9f477)"></div>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH8FSZKL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <header class="site-header wrap">
-  <a class="brand" href="#top" aria-label="007SaaS home"><span class="brand-mark">007</span><span>007SaaS<small>INDEPENDENT GROWTH LAB</small></span></a>
+  <a class="brand" href="#top" aria-label="007SaaS home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M9 13.5h26L19 31h16" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="10" r="3" fill="#c5f36b"/></svg></span><span>007SAAS<small>INDEPENDENT GROWTH LAB</small></span></a>
   <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menu ☰</button>
   <nav class="nav-links" id="navLinks" aria-label="Main navigation">
     <a href="#projects">Projects</a><a href="#cases">Case studies</a><a href="#capabilities">Capabilities</a><a href="/notes/validate-before-build/">Insights</a><a href="/about/">About</a><a class="nav-cta" href="#contact">Let's talk ↗</a>
@@ -76,7 +113,7 @@ section.content-section{padding:112px 0}.section-top{display:flex;justify-conten
     </div>
     <div class="hero-art" aria-label="Abstract visualization of connected growth systems">
       <div class="art-glow"></div><div class="orbit"><i class="orbit-node node-a"></i><i class="orbit-node node-b"></i><i class="orbit-node node-c"></i></div><div class="orbit orbit-two"></div>
-      <div class="core"><strong>007</strong><span>GROWTH ENGINE</span></div>
+      <div class="core"><strong>007SAAS</strong><span>INDEPENDENT GROWTH ENGINE</span></div>
       <div class="float-card float-one"><span class="float-label">SIGNAL / 01</span><b>Find the leverage</b></div>
       <div class="float-card float-two"><span class="float-label">SYSTEM / 02</span><b>Build. Measure. Improve.</b></div>
     </div>
@@ -133,5 +170,12 @@ if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion
  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 }else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));}
 </script>
-</body>
+<script>
+(function(){
+const header=document.querySelector('.site-header'),menu=document.getElementById('menuToggle'),nav=document.getElementById('navLinks'),progress=document.getElementById('scrollProgress'),reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(menu&&nav){const close=()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');};menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('keydown',e=>{if(e.key==='Escape')close();});}
+const scroll=()=>{const y=window.scrollY;header.classList.toggle('scrolled',y>12);const max=document.documentElement.scrollHeight-window.innerHeight;progress.style.width=(max>0?y/max*100:0)+'%';};window.addEventListener('scroll',scroll,{passive:true});scroll();
+if(!reduce&&window.matchMedia('(hover:hover) and (pointer:fine)').matches){document.querySelectorAll('.project-card').forEach(card=>card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--spot-x',(e.clientX-r.left)+'px');card.style.setProperty('--spot-y',(e.clientY-r.top)+'px');}));}
+})();
+</script></body>
 </html>
