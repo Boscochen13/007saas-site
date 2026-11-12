@@ -253,5 +253,5 @@ const header=document.querySelector('.site-header'),progress=document.getElement
 const scroll=()=>{const y=window.scrollY;header.classList.toggle('scrolled',y>12);const max=document.documentElement.scrollHeight-window.innerHeight;progress.style.width=(max>0?y/max*100:0)+'%';};window.addEventListener('scroll',scroll,{passive:true});scroll();
 if(!reduce&&window.matchMedia('(hover:hover) and (pointer:fine)').matches){document.querySelectorAll('.project-card').forEach(card=>card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--spot-x',(e.clientX-r.left)+'px');card.style.setProperty('--spot-y',(e.clientY-r.top)+'px');}));}
 })();
-</script></body>
+</script><script src="/assets/language-switcher.js" defer></script></body>
 </html>
