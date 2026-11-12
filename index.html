@@ -150,6 +150,11 @@ h1{max-width:100%;font-size:clamp(2.55rem,4.15vw,4.2rem);line-height:1.07;letter
   .email-link,.contact-actions .button,.nav-cta{transition:none}
 }
 
+
+/* Tools grid: five utilities in a balanced responsive layout */
+.tool-grid .project-card,.tool-grid .project-card.featured{grid-column:span 4;min-height:300px}
+@media(max-width:920px){.tool-grid .project-card,.tool-grid .project-card.featured{grid-column:span 6}}
+@media(max-width:680px){.tool-grid .project-card,.tool-grid .project-card.featured{grid-column:span 12;min-height:270px}}
 </style>
 </head>
 <body><div id="scrollProgress" aria-hidden="true" style="position:fixed;z-index:120;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,#8caeff,#73e5dc,#c9f477)"></div>
