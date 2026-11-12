@@ -89,6 +89,12 @@ section.content-section{padding:76px 0}.section-top{gap:13px;margin-bottom:28px}
 @media(max-width:380px){.wrap{width:calc(100% - 28px)}.hero-art{min-height:285px}}
 @media(hover:none){.project-card:hover,.case-card:hover{transform:none}.project-card:before{display:none}}
 @media(prefers-reduced-motion:reduce){.core{animation:none!important}}
+
+/* Visual QA fixes: keep inline project icons legible and hero copy inside its column */
+.project-symbol svg{display:block;width:40px;height:40px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+h1{font-size:clamp(2.7rem,4.35vw,4.8rem);line-height:1.04;max-width:none;overflow-wrap:normal}
+@media(max-width:680px){h1{font-size:clamp(2.4rem,10.1vw,3.65rem);line-height:1.06}}
+@media(max-width:380px){h1{font-size:clamp(2.2rem,9.8vw,2.9rem)}}
 </style>
 </head>
 <body><div id="scrollProgress" aria-hidden="true" style="position:fixed;z-index:120;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,#8caeff,#73e5dc,#c9f477)"></div>
